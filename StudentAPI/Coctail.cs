@@ -8,10 +8,11 @@ namespace StudentAPI
 {
     internal class Coctail
     {
-        public string idDrink { get; set; }
-        public string strDrink { get; set; }
+        public int Id { get; set; }
+        public required string idDrink { get; set; }
+        public required string strDrink { get; set; }
 
-        public string strInstructions { get; set; }
+        public required string strInstructions { get; set; }
 
         public override string ToString()
         {

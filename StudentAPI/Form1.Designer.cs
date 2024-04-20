@@ -36,6 +36,8 @@
             textBox1 = new TextBox();
             button3 = new Button();
             textBox2 = new TextBox();
+            button4 = new Button();
+            textBoxDatabaseCount = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -110,11 +112,31 @@
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 8;
             // 
+            // button4
+            // 
+            button4.Location = new Point(667, 222);
+            button4.Name = "button4";
+            button4.Size = new Size(133, 23);
+            button4.TabIndex = 9;
+            button4.Text = "Clear Database";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // textBoxDatabaseCount
+            // 
+            textBoxDatabaseCount.Location = new Point(682, 193);
+            textBoxDatabaseCount.Name = "textBoxDatabaseCount";
+            textBoxDatabaseCount.ReadOnly = true;
+            textBoxDatabaseCount.Size = new Size(100, 23);
+            textBoxDatabaseCount.TabIndex = 10;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(854, 472);
+            Controls.Add(textBoxDatabaseCount);
+            Controls.Add(button4);
             Controls.Add(textBox2);
             Controls.Add(button3);
             Controls.Add(textBox1);
@@ -140,5 +162,7 @@
         private TextBox textBox1;
         private Button button3;
         private TextBox textBox2;
+        private Button button4;
+        private TextBox textBoxDatabaseCount;
     }
 }
