@@ -16,7 +16,7 @@ namespace StudentAPI
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source=Coct.db");
+            optionsBuilder.UseSqlite(@"Data Source=Coctails.db");
         }
 
     }
