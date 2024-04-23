@@ -287,10 +287,13 @@
             Controls.Add(listBoxCoctails);
             Margin = new Padding(2);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Cocktails";
             Load += Form1_Load;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             ResumeLayout(false);
             PerformLayout();
+            AutoSize = true;
         }
 
         #endregion
